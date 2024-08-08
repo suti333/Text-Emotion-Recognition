@@ -1,7 +1,7 @@
 ﻿# Text Emotion Recognition
 
 ## Dataset
-The ISEAR dataset, derived from Dr. Puneet's paper, originally encompasses a wide range of emotional states. However, for our specific task, we focused on four primary emotions: Anger, Disgust, Joy, and Sadness. The dataset contains textual samples annotated with these emotions, providing a rich source for emotion recognition model training and evaluation.
+The ISEAR dataset originally encompasses a wide range of emotional states. However, for our specific task, we focused on four primary emotions: Anger, Disgust, Joy, and Sadness. The dataset contains textual samples annotated with these emotions, providing a rich source for emotion recognition model training and evaluation.
 
 * Dataset Link: [ISEAR Dataset](https://www.kaggle.com/datasets/faisalsanto007/isear-dataset?resource=download)
 * Dataset Statistics:
@@ -31,3 +31,21 @@ This approach leverages the RoBERTa (A Robustly Optimized BERT Pretraining Appro
 These channels are combined and passed through a dense layer for final classification.
 
 ## Results
+
+### BERT-based Dual Channel Pipeline
+* Validation Accuracy: 84.28%
+* F1-Score: 0.8442
+* Precision: 0.8594
+* Recall: 0.8428
+* Confusion Matrix:
+  
+![image](https://github.com/user-attachments/assets/d09328d3-0550-4116-88ad-d573ee72672d)
+
+### RoBERTa-based Trichannel Pipeline
+* Validation Accuracy: 87.02%
+* F1-Score: 0.8693
+* Precision: 0.8726
+* Recall: 0.8702
+* Confusion Matrix:
+  
+  ![image](https://github.com/user-attachments/assets/2d01dbea-8ea0-4b76-8dcd-7d2c748716cf)
