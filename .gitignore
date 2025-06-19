@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+
+ISEAR_0/
+AffectiveText.Semeval.2007/
+CARER_Emotion_Dataset/
